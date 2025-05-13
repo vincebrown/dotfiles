@@ -1,0 +1,35 @@
+# Theme
+theme = catppuccin-mocha
+background-opacity = 0.96
+title = "_"
+
+# Font size and line height
+font-size = 15
+adjust-cell-height = 50%
+font-family = "CommitMonoVB"
+font-style = "Regular"
+
+# Mac OS specific
+macos-titlebar-style = transparent
+macos-titlebar-proxy-icon = hidden
+macos-option-as-alt = true
+mouse-hide-while-typing = true
+macos-icon = retro
+window-title-font-family = "CommitMonoVB"
+window-height = 30
+window-width = 80
+shell-integration-features = cursor
+
+# Cursor
+cursor-style = block
+cursor-click-to-move = true
+cursor-color = "#9399b2"
+cursor-style = "block"
+mouse-hide-while-typing = true
+
+# Keybinds
+keybind = super+j=goto_split:down
+keybind = super+k=goto_split:up
+keybind = super+l=goto_split:right
+keybind = super+h=goto_split:left
+
