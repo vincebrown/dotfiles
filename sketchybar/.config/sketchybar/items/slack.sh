@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 ## ─────────────────────────────────────────────────────────────────────────────
-## Displays the current slack layout.
-##
-## Using `\uf198` (nf-fa-slack) icon.
+## Displays the current slack layout with unread message count.
 ## ─────────────────────────────────────────────────────────────────────────────
 
 sketchybar --add item slack right
