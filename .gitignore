@@ -3,3 +3,7 @@
 **/.DS_Store
 **/cron_data.json
 sketchybar/.config/sketchybar/cron_data.json
+zsh/.config/zsh/repos/
+zsh/.config/zsh/plugins/
+zsh/.config/zsh/utils/hh-env.zsh
+zsh/.config/zsh/tokens.zsh
