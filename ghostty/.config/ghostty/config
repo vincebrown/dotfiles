@@ -4,8 +4,8 @@ background-opacity = 0.96
 title = "_"
 
 # Font size and line height
-font-size = 15
-adjust-cell-height = 50%
+font-size = 14
+adjust-cell-height = 75%
 font-family = "CommitMonoVB"
 font-style = "Regular"
 
