@@ -1,7 +1,3 @@
-export CPPFLAGS="-I/opt/homebrew/include -L/opt/homebrew/lib"
-export CFLAGS="-I/opt/homebrew/include"
-export LDFLAGS="-L/opt/homebrew/lib"
-
 # Source homebrew first as other files may depend on tools that were downloaded from it
 source ~/.config/zsh/tools/homebrew.zsh
 
