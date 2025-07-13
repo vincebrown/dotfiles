@@ -5,7 +5,7 @@ title = "_"
 
 # Font size and line height
 font-size = 16
-adjust-cell-height = 75%
+adjust-cell-height = 50%
 font-family = "CommitMonoVB"
 font-style = "Regular"
 

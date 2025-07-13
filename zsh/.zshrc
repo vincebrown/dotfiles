@@ -49,4 +49,3 @@ if [[ -f "$syntax_highlighting_plugin" ]]; then
   source "$syntax_highlighting_plugin"
 fi
 
-alias claude="/Users/vince.brown/.claude/local/claude"
