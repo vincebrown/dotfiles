@@ -4,9 +4,10 @@ background-opacity = 0.94
 title = "_"
 
 # Font size and line height
-font-size = 16
+font-size = 17
 adjust-cell-height = 50%
-font-family = "CommitMonoVB"
+# font-family = "CommitMonoVB"
+font-family = "Reddit Mono"
 font-style = "Regular"
 
 # Mac OS specific

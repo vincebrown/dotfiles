@@ -5,11 +5,14 @@ alias dockSpace="defaults write com.apple.dock persistent-apps -array-add '{"til
 alias ls="eza --color=always -G -a --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
 alias c="clear"
 
+# Source config
 alias sz="source ~/.zshrc"
 
 # alias -h and --help with Bat for formatting
 alias -g -- -h='-h 2>&1 | bat --language=help --style=plain'
 alias -g -- --help='--help 2>&1 | bat --language=help --style=plain'
+
+alias lsPkgScripts="bat package.json | jq '.scripts'"
 
 # Github aliases
 
