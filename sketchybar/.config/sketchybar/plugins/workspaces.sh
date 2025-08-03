@@ -1,21 +1,19 @@
 #!/usr/bin/env bash
-source "${CONFIG_DIR}/themes/catppuccin-macchiato.sh"
+source "${CONFIG_DIR}/themes/catppuccin-mocha.sh"
 
-## ─────────────────────────────────────────────────────────────────────────────
 ## If the AeroSpace Workspace is the one in focus, then highlight it.
-## ─────────────────────────────────────────────────────────────────────────────
-_SSDF_WS_ID=$1
-_SSDF_WS_FOCUSED="${FOCUSED_WORKSPACE}"
-if [[ -z "${_SSDF_WS_FOCUSED}" ]]; then
-    _SSDF_WS_FOCUSED=$(aerospace list-workspaces --focused)
+WORKSPACE_ID=$1
+WORKSPACE_FOCUSED="${FOCUSED_WORKSPACE}"
+if [[ -z "${WORKSPACE_FOCUSED}" ]]; then
+  WORKSPACE_FOCUSED=$(aerospace list-workspaces --focused)
 fi
 
-if [ "${_SSDF_WS_ID}" = "${_SSDF_WS_FOCUSED}" ]; then
-    sketchybar --set $NAME \
-        label.color="${_SSDF_CM_MAUVE}" \
-        background.color="${_SSDF_CM_SURFACE_2}"
+if [ "${WORKSPACE_ID}" = "${WORKSPACE_FOCUSED}" ]; then
+  sketchybar --set "$NAME" \
+    label.color="${MAUVE}" \
+    background.color="${SURFACE_1}"
 else
-    sketchybar --set $NAME background.drawing=off \
-        label.color="${_SSDF_CM_SUBTEXT_0}" \
-        background.color="${_SSDF_CM_SURFACE_0}"
+  sketchybar --set "$NAME" background.drawing=off \
+    label.color="${SUBTEXT_0}" \
+    background.color="${SURFACE_0}"
 fi
