@@ -7,6 +7,12 @@
 ## ─────────────────────────────────────────────────────────────────────────────
 
 sketchybar --add item battery right
-sketchybar --set battery update_freq=600 script="${CONFIG_DIR}/plugins/battery.sh"
+sketchybar --set battery \
+  update_freq=600 \
+  script="${CONFIG_DIR}/plugins/battery.sh" \
+  background.corner_radius=5 \
+  background.height=20 \
+  background.color="${SURFACE_0_40}" \
+  icon.padding_left=8 \
+  label.padding_right=8
 sketchybar --subscribe battery system_woke power_source_change
-

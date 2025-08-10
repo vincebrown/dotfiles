@@ -24,8 +24,9 @@ for WORKSPACE_ID in $(aerospace list-workspaces --all); do
   sketchybar --set "workspace.${WORKSPACE_ID}" \
     background.corner_radius=5 \
     background.height=20 \
-    background.color="${SURFACE_0}" \
     label.color="${SUBTEXT_0}" \
     label="${WORKSPACE_ID}: ${WS_ICON}" \
-    script="${CONFIG_DIR}/plugins/workspaces.sh ${WORKSPACE_ID}"
+    script="${CONFIG_DIR}/plugins/workspaces.sh ${WORKSPACE_ID}" \
+    label.padding_left=8 \
+    label.padding_right=8
 done

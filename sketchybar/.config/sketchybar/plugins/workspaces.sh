@@ -11,9 +11,9 @@ fi
 if [ "${WORKSPACE_ID}" = "${WORKSPACE_FOCUSED}" ]; then
   sketchybar --set "$NAME" \
     label.color="${MAUVE}" \
-    background.color="${SURFACE_1}"
+    background.color="${SURFACE_0}"
 else
   sketchybar --set "$NAME" background.drawing=off \
     label.color="${SUBTEXT_0}" \
-    background.color="${SURFACE_0}"
+    background.color="${SURFACE_0_40}"
 fi

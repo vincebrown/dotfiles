@@ -1,7 +1,11 @@
 # Theme
-theme = catppuccin-mocha
-background-opacity = 0.94
-title = "_"
+theme = catppuccin-mocha-v2.conf
+background-opacity = 0.9
+background-blur = true
+title = " "
+maximize = true
+window-padding-x = 12
+window-padding-y = 12
 
 # Font size and line height
 font-size = 16
@@ -11,6 +15,8 @@ adjust-cell-height = 60%
 font-family = "Twilio Sans Mono"
 font-style = "Regular"
 
+alpha-blending = native
+
 # Mac OS specific
 macos-titlebar-style = transparent
 macos-titlebar-proxy-icon = hidden
@@ -18,8 +24,6 @@ macos-option-as-alt = true
 mouse-hide-while-typing = true
 macos-icon = retro
 window-title-font-family = "CommitMonoVB"
-window-height = 30
-window-width = 80
 shell-integration-features = cursor
 
 # Cursor
@@ -34,8 +38,8 @@ cursor-click-to-move = true
 cursor-color = "#b4befe"
 # Mauve
 # cursor-color = "#cba6f7"
-# cursor-style = "block"
-# custom-shader = shaders/cubes.glsl
+cursor-style = "block"
+# custom-shader = shaders/starfield.glsl
 custom-shader = shaders/cursor_smear.glsl
 
 # Keybinds

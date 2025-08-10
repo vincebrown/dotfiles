@@ -13,7 +13,7 @@ after-login-command = []
 after-startup-command = [
     ## SketchyBar
     'exec-and-forget sketchybar --reload ~/.config/sketchybar/sketchybarrc',
-    'exec-and-forget borders active_color=0xffe1e3e4 inactive_color=0xff494d64 width=4.0',
+    'exec-and-forget borders',
 ]
 
 # Notify Sketchybar about focuse change
@@ -187,6 +187,8 @@ alt-o = 'exec-and-forget open -a /Applications/Obsidian.app'
 alt-s = 'exec-and-forget open -a /Applications/Slack.app'
 alt-m = 'exec-and-forget open -a /Applications/Spotify.app'
 alt-b = 'exec-and-forget open -a "/Applications/Google Chrome.app"'
+alt-i = 'exec-and-forget open -b com.apple.iphonesimulator'
+alt-d = 'exec-and-forget ~/.config/aerospace/scripts/open-lazydocker.sh'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#mode
 alt-shift-s = 'mode service'

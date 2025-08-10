@@ -7,7 +7,7 @@ source "${CONFIG_DIR}/themes/catppuccin-mocha.sh"
 bar=(
   position=top
   height=35
-  color="${TRANSPARENT_BASE}"
+  color="${TRANSPARENT_BASE_2}"
   corner_radius=8
   margin=15
   y_offset=8
@@ -17,16 +17,12 @@ sketchybar --bar "${bar[@]}"
 # Item Properties.
 # See: https://felixkratz.github.io/SketchyBar/config/items
 default=(
-  padding_left=5
   padding_right=5
   icon.font="JetBrainsMono Nerd Font:Bold:17.0"
-  label.font="JetBrainsMono Nerd Font:Bold:14.0"
+  label.font="JetBrainsMono Nerd Font:Regular:14.0"
   icon.color="${SUBTEXT_1}"
   label.color="${SUBTEXT_1}"
-  icon.padding_left=4
   icon.padding_right=4
-  label.padding_left=4
-  label.padding_right=4
 )
 sketchybar --default "${default[@]}"
 

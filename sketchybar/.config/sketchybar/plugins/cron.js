@@ -138,11 +138,14 @@ rd.on("close", function () {
     execute(`
       sketchybar --set ${ITEM_NAME} \
         label="No upcoming meetings" \
-        background.drawing=off \
-        icon.padding_left=0 \
         label.padding_right=0 \
         icon=󰢠 \
         click_script="" \
+        background.corner_radius=5 \
+        background.height=20 \
+        background.color="0x66313244" \
+        icon.padding_left=8 \
+        label.padding_right=8
     `);
 
     return;
