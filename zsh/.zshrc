@@ -50,3 +50,4 @@ if [[ -f "$syntax_highlighting_plugin" ]]; then
   source "$syntax_highlighting_plugin"
 fi
 
+export PATH="$HOME/go/bin:$PATH"

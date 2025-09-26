@@ -39,11 +39,13 @@ _fzf_compgen_dir() {
   fd --type=d --hidden --exclude .git . "$1"
 }
 
-# Catppuccin Mocha
+# Catppuccin Mocha (Slightly Darkened)
 export FZF_DEFAULT_OPTS=" \
---color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 \
---color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
---color=marker:#f5e0dc,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8"
+--color=bg+:#2b2c3b,bg:#191924,spinner:#ddb6b3,hl:#dd7c96 \
+--color=fg:#b8c0e0,header:#dd7c96,info:#b694e0,pointer:#ddb6b3 \
+--color=marker:#a2ace8,fg+:#b8c0e0,prompt:#b694e0,hl+:#dd7c96 \
+--color=selected-bg:#3c3e4f \
+--color=border:#5f6379,label:#b8c0e0"
 
 # Keybind	Description
 # CTRL-GF	Look for git files with fzf

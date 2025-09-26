@@ -3,6 +3,7 @@ alias dockSpace="defaults write com.apple.dock persistent-apps -array-add '{"til
 
 # alias ls with eza for better display
 alias ls="eza --color=always -G -a --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
+alias lsP="eza --color=always -G -a --long --icons=always --no-filesize --no-user --no-time"
 alias c="clear"
 
 # Source config
