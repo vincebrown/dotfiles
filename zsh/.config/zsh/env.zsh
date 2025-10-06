@@ -6,6 +6,7 @@ compinit
 export XDG_CONFIG_HOME="$HOME/.config"
 
 export LS_COLORS="$(vivid generate catppuccin-mocha)"
+export COLORTERM=truecolor
 
 # set cursor shape
 echo -ne '\e[1 q'

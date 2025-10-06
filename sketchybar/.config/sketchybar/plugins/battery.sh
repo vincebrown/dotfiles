@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-source "${CONFIG_DIR}/themes/catppuccin-mocha.sh"
+source "${CONFIG_DIR}/themes/everforest.sh"
 # Displays the battery charge.
 
 # Extract battery percentage: get battery info, find digits+%, remove % symbol
@@ -14,28 +14,28 @@ fi
 case "${PERCENTAGE}" in
 9[0-9] | 100)
   ICON=""
-  LABEL_COLOR="${GREEN}"
-  ICON_COLOR="${GREEN}"
+  LABEL_COLOR="${EF_GREEN}"
+  ICON_COLOR="${EF_GREEN}"
   ;;
 [6-8][0-9])
   ICON=""
-  LABEL_COLOR="${YELLOW}"
-  ICON_COLOR="${YELLOW}"
+  LABEL_COLOR="${EF_YELLOW}"
+  ICON_COLOR="${EF_YELLOW}"
   ;;
 [3-5][0-9])
   ICON=""
-  LABEL_COLOR="${PEACH}"
-  ICON_COLOR="${PEACH}"
+  LABEL_COLOR="${EF_ORANGE}"
+  ICON_COLOR="${EF_ORANGE}"
   ;;
 [1-2][0-9])
   ICON=""
-  LABEL_COLOR="${RED}"
-  ICON_COLOR="${RED}"
+  LABEL_COLOR="${EF_RED}"
+  ICON_COLOR="${EF_RED}"
   ;;
 *)
   ICON=""
-  LABEL_COLOR="${RED}"
-  ICON_COLOR="${RED}"
+  LABEL_COLOR="${EF_RED}"
+  ICON_COLOR="${EF_RED}"
   ;;
 esac
 

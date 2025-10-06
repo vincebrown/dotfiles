@@ -1,5 +1,6 @@
 # Theme
-theme = catppuccin-mocha-v2.conf
+# theme = catppuccin-mocha-v2.conf
+theme = Everforest Dark Hard
 background-opacity = 0.9
 background-blur = true
 title = " "
@@ -8,12 +9,18 @@ window-padding-x = 12
 window-padding-y = 12
 
 # Font size and line height
-font-size = 17
-adjust-cell-height = 60%
+font-size = 16
+adjust-cell-height = 50%
 # font-family = "CommitMonoVB"
-font-family = "Reddit Mono"
+# font-family = "Reddit Mono"
+font-family = "BerkeleyMono"
 # font-family = "Twilio Sans Mono"
-font-style = "Regular"
+# enable opentype features
+font-feature = +liga # standard ligatures (-> becomes →, != becomes ≠)
+font-feature = +calt # contextual alternates (adjusts glyphs based on context)
+font-feature = +ss01 # stylistic set 1 (alternate glyph designs)
+font-feature = +ss02 # stylistic set 2 (more alternates)
+font-feature = +zero # slashed zero (0 vs o distinction)
 
 alpha-blending = native
 

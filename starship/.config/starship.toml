@@ -1,61 +1,61 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
-[](surface0)\
+[](bg0)\
 $os\
 $username\
-[](bg:peach fg:surface0)\
+[](bg:bg_green fg:bg0)\
 $directory\
-[](fg:peach bg:green)\
+[](fg:bg_green bg:bg_visual)\
 $git_branch\
 $git_status\
-[](fg:green bg:teal)\
+[](fg:bg_visual bg:bg_blue)\
 $nodejs\
 $golang\
 $ruby\
 $java\
 $rust\
 $python\
-[](fg:teal bg:blue)\
+[](fg:bg_blue bg:bg_yellow)\
 $aws\
-[](fg:blue bg:purple)\
+[](fg:bg_yellow bg:bg3)\
 $time\
-[ ](fg:purple)\
+[ ](fg:bg3)\
 $line_break$character"""
 
-palette = 'catppuccin_mocha'
+palette = 'everforest'
 
-[palettes.catppuccin_mocha]
-rosewater = "#f5e0dc"
-flamingo = "#f2cdcd"
-pink = "#f5c2e7"
-orange = "#cba6f7"
-red = "#f38ba8"
-maroon = "#eba0ac"
-peach = "#fab387"
-yellow = "#f9e2af"
-green = "#a6e3a1"
-teal = "#94e2d5"
-sky = "#89dceb"
-sapphire = "#74c7ec"
-blue = "#89b4fa"
-lavender = "#b4befe"
-text = "#cdd6f4"
-subtext1 = "#bac2de"
-subtext0 = "#a6adc8"
-overlay2 = "#9399b2"
-overlay1 = "#7f849c"
-overlay0 = "#6c7086"
-surface2 = "#585b70"
-surface1 = "#45475a"
-surface0 = "#313244"
-base = "#1e1e2e"
-mantle = "#181825"
-crust = "#11111b"
+[palettes.everforest]
+bg_dim = "#232a2e"
+bg0 = "#2d353b"
+bg1 = "#343f44"
+bg2 = "#3d484d"
+bg3 = "#475258"
+bg4 = "#4f585e"
+bg5 = "#56635f"
+bg_visual = "#543a48"
+bg_red = "#514045"
+bg_green = "#425047"
+bg_blue = "#3a515d"
+bg_yellow = "#4d4c43"
+fg = "#d3c6aa"
+red = "#e67e80"
+orange = "#e69875"
+yellow = "#dbbc7f"
+green = "#a7c080"
+aqua = "#83c092"
+blue = "#7fbbb3"
+purple = "#d699b6"
+grey0 = "#7a8478"
+grey1 = "#859289"
+grey2 = "#9da9a0"
+statusline1 = "#a7c080"
+statusline2 = "#d3c6aa"
+statusline3 = "#e67e80"
 
 [os]
 disabled = false
-style = "bg:surface0 fg:text"
+style = "bg:bg0 fg:statusline2"
 
 [os.symbols]
 Windows = "󰍲"
@@ -80,12 +80,12 @@ RedHatEnterprise = "󱄛"
 
 [username]
 show_always = true
-style_user = "bg:surface0 fg:text"
-style_root = "bg:surface0 fg:text"
+style_user = "bg:bg0 fg:statusline2"
+style_root = "bg:bg0 fg:statusline2"
 format = '[ vince ]($style)'
 
 [directory]
-style = "fg:mantle bg:peach"
+style = "fg:statusline2 bg:bg_green"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
@@ -99,80 +99,80 @@ truncation_symbol = "…/"
 
 [git_branch]
 symbol = ""
-style = "bg:teal"
-format = '[[ $symbol $branch ](fg:base bg:green)]($style)'
+style = "bg:bg_visual"
+format = '[[ $symbol $branch ](fg:statusline2 bg:bg_visual)]($style)'
 
 [git_status]
-style = "bg:teal"
-format = '[[($all_status$ahead_behind )](fg:base bg:green)]($style)'
+style = "bg:bg_visual"
+format = '[[($all_status$ahead_behind )](fg:statusline2 bg:bg_visual)]($style)'
 
 [nodejs]
 symbol = "󰎙 "
 style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
+format = '[[ $symbol( $version) ](fg:statusline2 bg:bg_blue)]($style)'
 
 [c]
 symbol = " "
 style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
+format = '[[ $symbol( $version) ](fg:statusline2 bg:bg_blue)]($style)'
 
 [ruby]
 symbol = " "
 style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
+format = '[[ $symbol( $version) ](fg:statusline2 bg:bg_blue)]($style)'
 
 [rust]
 symbol = ""
 style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
+format = '[[ $symbol( $version) ](fg:statusline2 bg:bg_blue)]($style)'
 
 [golang]
 symbol = " "
 style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
+format = '[[ $symbol( $version) ](fg:statusline2 bg:bg_blue)]($style)'
 
 [php]
 symbol = " "
 style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
+format = '[[ $symbol( $version) ](fg:statusline2 bg:bg_blue)]($style)'
 
 [java]
 symbol = " "
 style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
+format = '[[ $symbol( $version) ](fg:statusline2 bg:bg_blue)]($style)'
 
 [kotlin]
 symbol = ""
 style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
+format = '[[ $symbol( $version) ](fg:statusline2 bg:bg_blue)]($style)'
 
 [haskell]
 symbol = ""
 style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
+format = '[[ $symbol( $version) ](fg:statusline2 bg:bg_blue)]($style)'
 
 [python]
 symbol = ""
 style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
+format = '[[ $symbol( $version) ](fg:statusline2 bg:bg_blue)]($style)'
 
 
 [aws]
 format = '[ $symbol $profile]($style)'
-style = "bg:blue"
+style = "bg:bg_yellow"
 symbol = ""
 
 [kubernetes]
 format = '[ $symbol $context]($style)'
 symbol = ""
-style = "bg:blue"
+style = "bg:bg_yellow"
 disabled = false
 
 [time]
 disabled = false
 time_format = "%R"
-style = "bg:peach"
-format = '[[  $time ](fg:mantle bg:purple)]($style)'
+style = "bg:bg3"
+format = '[[  $time ](fg:statusline2 bg:bg3)]($style)'
 
 [line_break]
 disabled = false
