@@ -6,11 +6,19 @@
 # "gradient(top_right=0xffa6e3a1,bottom_left=0xff94e2d5)" - Green to Teal
 # "gradient(top_right=0xff89b4fa,bottom_left=0xffcba6f7)" - Blue to Mauve
 
+# Everforest Hard gradient options:
+# "gradient(top_right=0xff7FBBB3,bottom_left=0xffD699B6)" - Blue to Purple
+# "gradient(top_right=0xffA7C080,bottom_left=0xff83C092)" - Green to Aqua
+# "gradient(top_right=0xffDBBC7F,bottom_left=0xffE69875)" - Yellow to Orange
+# "gradient(top_right=0xff83C092,bottom_left=0xff7FBBB3)" - Aqua to Blue
+# "gradient(top_right=0xffE67E80,bottom_left=0xffD699B6)" - Red to Purple
+# "gradient(top_right=0xffA7C080,bottom_left=0xff7FBBB3)" - Green to Blue
+
 options=(
   style=round
   width=6.0
   hidpi=off
-  active_color="gradient(top_right=0xff94e2d5,bottom_left=0xffcba6f7)"
+  active_color="gradient(top_right=0xffA7C080,bottom_left=0xff7FBBB3)"
   inactive_color=0xff1e1e2e
 )
 
