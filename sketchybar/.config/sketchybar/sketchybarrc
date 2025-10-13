@@ -18,8 +18,8 @@ sketchybar --bar "${bar[@]}"
 # See: https://felixkratz.github.io/SketchyBar/config/items
 default=(
   padding_right=5
-  icon.font="JetBrainsMono Nerd Font:Bold:17.0"
-  label.font="JetBrainsMono Nerd Font:Regular:14.0"
+  icon.font="BerkeleyMono Nerd Font:Regular:17.0"
+  label.font="BerkeleyMono Nerd Font:Regular:14.0"
   icon.color="${EF_GRAY2}"
   label.color="${EF_GRAY2}"
   icon.padding_right=4

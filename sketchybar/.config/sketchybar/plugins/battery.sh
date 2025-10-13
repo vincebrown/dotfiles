@@ -39,8 +39,8 @@ case "${PERCENTAGE}" in
   ;;
 esac
 
-if [[ "" != "${CHARGING}" ]]; then
-  ICON=""
+if [[ -n "${CHARGING}" ]]; then
+  ICON="󱐋"
 fi
 
-sketchybar --set "$NAME" icon="$ICON" label="${PERCENTAGE}%" label.color="${LABEL_COLOR}" icon.color="${ICON_COLOR}"
+sketchybar --set "${NAME}" icon="${ICON}" label="${PERCENTAGE}%" label.color="${LABEL_COLOR}" icon.color="${ICON_COLOR}"
