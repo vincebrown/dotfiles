@@ -1,12 +1,16 @@
 # Theme
 # theme = catppuccin-mocha-v2.conf
-theme = Everforest Dark Hard
+# theme = Everforest Dark Hard
+theme = Black Metal (Gorgoroth)
+background = #0a0a0a
+# background = #0f0f0f
 background-opacity = 0.9
 background-blur = true
 title = " "
 maximize = true
 window-padding-x = 12
 window-padding-y = 12
+scrollbar = never
 
 # Font size and line height
 font-size = 16
@@ -37,12 +41,15 @@ shell-integration-features = cursor
 cursor-click-to-move = true
 # Gray
 # cursor-color = "#9399b2"
+
+# black metal accent
+cursor-color ="#9b8d7f"
 # Sky
 # cursor-color = "#89dceb"
 # Teal
 # cursor-color = "#94e2d5"
 # Lavender
-cursor-color = "#b4befe"
+# cursor-color = "#b4befe"
 # Mauve
 # cursor-color = "#cba6f7"
 cursor-style = "block"
