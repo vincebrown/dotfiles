@@ -38,7 +38,6 @@ if [[ -d "$repo_config_dir" ]]; then
 fi
 
 # Utils
-source ~/.config/zsh/utils/hh-env.zsh
 source ~/.config/zsh/utils/ffv.zsh
 source ~/.config/zsh/utils/git-clean-branches.zsh
 
