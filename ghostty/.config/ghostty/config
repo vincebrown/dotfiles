@@ -2,15 +2,14 @@
 # theme = catppuccin-mocha-v2.conf
 # theme = Everforest Dark Hard
 theme = Black Metal (Gorgoroth)
-background = #0a0a0a
-# background = #0f0f0f
+# background = #0a0a0a
+background = #0f0f0f
 background-opacity = 0.9
 background-blur = true
 title = " "
 maximize = true
 window-padding-x = 12
 window-padding-y = 12
-scrollbar = never
 
 # Font size and line height
 font-size = 16
