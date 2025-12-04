@@ -16,7 +16,7 @@ font-size = 16
 adjust-cell-height = 50%
 # font-family = "CommitMonoVB"
 # font-family = "Reddit Mono"
-font-family = "BerkeleyMono"
+font-family = "Berkeley Mono"
 # font-family = "Twilio Sans Mono"
 # enable opentype features
 font-feature = +liga # standard ligatures (-> becomes →, != becomes ≠)
@@ -33,7 +33,7 @@ macos-titlebar-proxy-icon = hidden
 macos-option-as-alt = true
 mouse-hide-while-typing = true
 macos-icon = retro
-window-title-font-family = "CommitMonoVB"
+window-title-font-family = "Berkeley Mono"
 shell-integration-features = cursor
 
 # Cursor
@@ -57,7 +57,7 @@ cursor-style = "block"
 # custom-shader = shaders/inside-the-matrix.glsl
 # custom-shader = shaders/starfield-colors.glsl
 # custom-shader = shaders/retro-terminal.glsl
-custom-shader = shaders/cursor_smear.glsl
+# custom-shader = shaders/cursor_smear.glsl
 
 # Keybinds
 keybind = super+j=goto_split:down

@@ -40,7 +40,7 @@ fi
 # Utils
 source ~/.config/zsh/utils/ffv.zsh
 source ~/.config/zsh/utils/git-clean-branches.zsh
-
+source ~/.config/zsh/utils/git-worktrees.zsh
 
 
 # This plugin must be sourced at the bottom of the .zshrc

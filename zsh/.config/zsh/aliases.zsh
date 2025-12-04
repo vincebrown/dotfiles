@@ -108,3 +108,4 @@ alias gsw='git switch'
 alias gswc='git switch --create'
 
 alias gwch='git whatchanged -p --abbrev-commit --pretty=medium'
+
