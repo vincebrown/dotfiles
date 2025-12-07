@@ -24,9 +24,9 @@ Use stow to symlink configurations:
 stow */
 
 # Or install specific configurations
-stow nvim
-stow zsh
-stow ghostty
+stow -t="$HOME" nvim
+stow -t="$HOME" zsh
+stow -t="$HOME" ghostty
 ```
 
 ## Configurations Included

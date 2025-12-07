@@ -4,10 +4,10 @@ local config = wezterm.config_builder()
 
 config.automatically_reload_config = true
 
-config.font_size = 15
+config.font_size = 16
 config.line_height = 1.5
 
-config.color_scheme = "Black Metal (Mayhem) (base16)"
+config.color_scheme = "Edge Dark (base16)"
 config.freetype_load_flags = "NO_AUTOHINT"
 
 config.font = wezterm.font("Berkeley Mono")
@@ -15,6 +15,7 @@ config.use_cap_height_to_scale_fallback_fonts = false
 
 config.window_decorations = "RESIZE"
 config.window_background_opacity = 0.9
+-- config.macos_window_background_blur = 10
 config.window_padding = {
 	bottom = 0,
 	top = 12,
@@ -25,7 +26,7 @@ config.window_padding = {
 config.use_fancy_tab_bar = false
 config.tab_bar_at_bottom = true
 config.colors = {
-	background = "#0f0f0f",
+	-- background = "#0f0f0f",
 	tab_bar = {
 		background = "#000000", -- base00
 		active_tab = {
