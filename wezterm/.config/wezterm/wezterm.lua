@@ -8,14 +8,18 @@ config.font_size = 16
 config.line_height = 1.5
 
 config.color_scheme = "Edge Dark (base16)"
+-- config.color_scheme = "Everforest Dark (Gogh)"
+-- config.color_scheme = "nord"
+-- config.color_scheme = "Catppuccin Mocha"
+
 config.freetype_load_flags = "NO_AUTOHINT"
 
 config.font = wezterm.font("Berkeley Mono")
 config.use_cap_height_to_scale_fallback_fonts = false
 
 config.window_decorations = "RESIZE"
-config.window_background_opacity = 0.9
--- config.macos_window_background_blur = 10
+config.window_background_opacity = 0.85
+config.macos_window_background_blur = 10
 config.window_padding = {
 	bottom = 0,
 	top = 12,
