@@ -41,7 +41,14 @@ source "${CONFIG_DIR}/items/current_app.sh"
 # Right Items
 source "${CONFIG_DIR}/items/datetime.sh"
 source "${CONFIG_DIR}/items/battery.sh"
-source "${CONFIG_DIR}/items/cron.sh"
-source "${CONFIG_DIR}/items/slack.sh"
+
+# Work-specific items
+# Set in ~/.config/zsh/tokens.zsh on work machines:
+#   export WORK_MACHINE=1
+#   launchctl setenv WORK_MACHINE 1
+if [[ -n "$WORK_MACHINE" ]]; then
+  source "${CONFIG_DIR}/items/cron.sh"
+  source "${CONFIG_DIR}/items/slack.sh"
+fi
 
 sketchybar --update
