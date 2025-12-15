@@ -1,0 +1,49 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "autoupdate": true,
+  "permission": {
+    "bash": {
+      "gh pr diff *": "allow"
+    }
+  },
+  "instructions": [
+    "README.md",
+    ".cursor/rules/*.md",
+    "CLAUDE.md"
+  ],
+  "theme": "system",
+  "share": "disabled",
+  "mcp": {
+    "context7": {
+      "enabled": true,
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@upstash/context7-mcp"
+      ],
+    },
+    "github": {
+      "enabled": true,
+      "type": "local",
+      "command": [
+        "docker",
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "GITHUB_PERSONAL_ACCESS_TOKEN",
+        "-e",
+        "GITHUB_DYNAMIC_TOOLSETS",
+        "-e",
+        "GITHUB_TOOLS",
+        "ghcr.io/github/github-mcp-server"
+      ],
+      "environment": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "{env:GITHUB_ACCESS_TOKEN}",
+        "GITHUB_DYNAMIC_TOOLSETS": "1",
+        "GITHUB_TOOLS": "create_pull_request,update_pull_request,list_pull_requests,pull_request_read,search_pull_requests,get_commit,get_file_contents,fork_repository,list_branches,list_commits,push_files,search_repositories"
+      }
+    },
+  }
+}
