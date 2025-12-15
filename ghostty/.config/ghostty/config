@@ -28,11 +28,13 @@ font-feature = +zero # slashed zero (0 vs o distinction)
 alpha-blending = native
 
 # Mac OS specific
-macos-titlebar-style = transparent
+macos-titlebar-style = tabs
 macos-titlebar-proxy-icon = hidden
 macos-option-as-alt = true
+macos-window-buttons = hidden
+macos-icon = glass
+
 mouse-hide-while-typing = true
-macos-icon = retro
 window-title-font-family = "Berkeley Mono"
 shell-integration-features = cursor
 
