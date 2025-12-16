@@ -1,9 +1,9 @@
 # Theme
 # theme = catppuccin-mocha-v2.conf
 # theme = Everforest Dark Hard
-theme = Black Metal (Gorgoroth)
+theme = Twilight
 # background = #0a0a0a
-background = #0f0f0f
+# background = #0f0f0f
 background-opacity = 0.9
 background-blur = true
 title = " "

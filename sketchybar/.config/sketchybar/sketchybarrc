@@ -40,7 +40,11 @@ source "${CONFIG_DIR}/items/current_app.sh"
 
 # Right Items
 source "${CONFIG_DIR}/items/datetime.sh"
-source "${CONFIG_DIR}/items/battery.sh"
+
+# Only load battery item if battery exists
+if pmset -g batt | grep -q "Battery"; then
+  source "${CONFIG_DIR}/items/battery.sh"
+fi
 
 # Work-specific items
 # Set in ~/.config/zsh/tokens.zsh on work machines:

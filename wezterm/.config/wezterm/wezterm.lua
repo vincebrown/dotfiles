@@ -6,6 +6,7 @@ config.automatically_reload_config = true
 
 config.font_size = 16
 config.line_height = 1.5
+config.max_fps = 120
 
 config.color_scheme = "Edge Dark (base16)"
 -- config.color_scheme = "Everforest Dark (Gogh)"
