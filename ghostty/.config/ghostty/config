@@ -1,32 +1,24 @@
 # Theme
-# theme = catppuccin-mocha-v2.conf
-# theme = forestbones.conf
 theme = Everforest Dark Hard
-# theme = Twilight
-# background = #0a0a0a
-# background = #0f0f0f
-background-opacity = 0.9
-background-blur = true
+background-opacity = 0.85
+background-blur = false
 title = " "
 maximize = true
 window-padding-x = 12
 window-padding-y = 12
+alpha-blending = native
 
 # Font size and line height
 font-size = 16
 adjust-cell-height = 50%
-# font-family = "CommitMonoVB"
-# font-family = "Reddit Mono"
 font-family = "Berkeley Mono"
-# font-family = "Twilio Sans Mono"
+
 # enable opentype features
 font-feature = +liga # standard ligatures (-> becomes →, != becomes ≠)
 font-feature = +calt # contextual alternates (adjusts glyphs based on context)
 font-feature = +ss01 # stylistic set 1 (alternate glyph designs)
 font-feature = +ss02 # stylistic set 2 (more alternates)
 font-feature = +zero # slashed zero (0 vs o distinction)
-
-alpha-blending = native
 
 # Mac OS specific
 macos-titlebar-style = tabs
@@ -41,26 +33,9 @@ shell-integration-features = cursor
 
 # Cursor
 cursor-click-to-move = true
-# Gray
-# cursor-color = "#9399b2"
-
-# black metal accent
-cursor-color ="#9b8d7f"
-# Sky
-# cursor-color = "#89dceb"
-# Teal
-# cursor-color = "#94e2d5"
-# Lavender
-# cursor-color = "#b4befe"
-# Mauve
-# cursor-color = "#cba6f7"
+cursor-color ="#4F5B58"
 cursor-style = "block"
-# custom-shader = shaders/glitchy.glsl
-# custom-shader = shaders/cubes.glsl
-# custom-shader = shaders/inside-the-matrix.glsl
-# custom-shader = shaders/starfield-colors.glsl
-# custom-shader = shaders/retro-terminal.glsl
-# custom-shader = shaders/cursor_smear.glsl
+custom-shader = shaders/cursor_smear.glsl
 
 # Keybinds
 keybind = super+j=goto_split:down
