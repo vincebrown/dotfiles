@@ -1,17 +1,30 @@
+#
+#       ██████╗ ██╗  ██╗ ██████╗ ███████╗████████╗████████╗██╗   ██╗
+#      ██╔════╝ ██║  ██║██╔═══██╗██╔════╝╚══██╔══╝╚══██╔══╝╚██╗ ██╔╝
+#      ██║  ███╗███████║██║   ██║███████╗   ██║      ██║    ╚████╔╝
+#      ██║   ██║██╔══██║██║   ██║╚════██║   ██║      ██║     ╚██╔╝
+#      ╚██████╔╝██║  ██║╚██████╔╝███████║   ██║      ██║      ██║
+#       ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚══════╝   ╚═╝      ╚═╝      ╚═╝
+#
+#                      Ghostty Terminal Config 👻
+#
+
 # Theme
 theme = Everforest Dark Hard
 background-opacity = 0.85
-background-blur = false
+background-blur = 5
 title = " "
 maximize = true
 window-padding-x = 12
 window-padding-y = 12
+window-padding-balance = true
 alpha-blending = native
 
 # Font size and line height
 font-size = 16
 adjust-cell-height = 50%
 font-family = "Berkeley Mono"
+# font-thicken = true
 
 # enable opentype features
 font-feature = +liga # standard ligatures (-> becomes →, != becomes ≠)
@@ -29,7 +42,7 @@ macos-icon = glass
 
 mouse-hide-while-typing = true
 window-title-font-family = "Berkeley Mono"
-shell-integration-features = cursor
+shell-integration = zsh
 
 # Cursor
 cursor-click-to-move = true
@@ -43,4 +56,5 @@ keybind = super+k=goto_split:up
 keybind = super+l=goto_split:right
 keybind = super+h=goto_split:left
 
-keybind = shift+enter=text:\n
+keybind = global:cmd+backquote=toggle_quick_terminal
+keybind = super+p=toggle_command_palette
