@@ -11,7 +11,7 @@
     ".cursor/rules/*.md",
     "CLAUDE.md"
   ],
-  "theme": "system",
+  "theme": "personal-catppuccin",
   "share": "disabled",
   "mcp": {
     "context7": {

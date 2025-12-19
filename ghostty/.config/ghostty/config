@@ -10,10 +10,10 @@
 #
 
 # Theme
-# theme = Everforest Dark Hard
 theme = catppuccin-mocha-v2.conf
 background-opacity = 0.85
 background-blur = 5
+background=#13131d
 title = " "
 maximize = true
 window-padding-x = 12

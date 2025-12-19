@@ -32,11 +32,12 @@ tm() {
         tmux new-session -s "$1"
     fi
 }
-alias tmk='tmux kill-session -t'          # Kill specific session
-alias tml='tmux list-sessions'            # List all sessions
-alias tmkall='tmux kill-server'           # Kill all sessions
-alias tmr='tmux rename-session'           # Rename current session
-alias tmd='tmux detach'                   # Detach from current session
+alias tmk='tmux kill-session -t'
+alias tml='tmux list-sessions'
+alias tmkall='tmux kill-server'
+alias tmr='tmux rename-window'
+alias tmrs='tmux rename-session'
+alias tmd='tmux detach'
 
 # Connect/create to session via sesh
 tmc() {
