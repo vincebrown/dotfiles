@@ -4,4 +4,4 @@
 ## ─────────────────────────────────────────────────────────────────────────────
 
 sketchybar --add item hostname left
-sketchybar --set hostname icon="" icon.color="${EF_AQUA}" script="${CONFIG_DIR}/plugins/hostname.sh" padding_right=16
+sketchybar --set hostname icon="" icon.color="${TEAL}" script="${CONFIG_DIR}/plugins/hostname.sh" padding_right=16

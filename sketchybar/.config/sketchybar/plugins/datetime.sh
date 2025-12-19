@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-source "${CONFIG_DIR}/themes/everforest.sh"
+source "${CONFIG_DIR}/themes/catppuccin-mocha.sh"
 
 ## ─────────────────────────────────────────────────────────────────────────────
 ## Displays the date and time in `YYYY-MM-DD HH:MM` format.
 ## ─────────────────────────────────────────────────────────────────────────────
-sketchybar --set "$NAME" label="$(date +'%m/%d/%y %I:%M %p')" label.color="${EF_GRAY2}" icon.color="${EF_GRAY2}"
+sketchybar --set "$NAME" label="$(date +'%m/%d/%y %I:%M %p')" label.color="${SUBTEXT_0}" icon.color="${SUBTEXT_0}"

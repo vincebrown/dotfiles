@@ -12,7 +12,7 @@ sketchybar --set battery \
   script="${CONFIG_DIR}/plugins/battery.sh" \
   background.corner_radius=5 \
   background.height=20 \
-  background.color="${EF_BG2_40}" \
+  background.color="${SURFACE_0_40}" \
   icon.padding_left=8 \
   label.padding_right=8
 sketchybar --subscribe battery system_woke power_source_change

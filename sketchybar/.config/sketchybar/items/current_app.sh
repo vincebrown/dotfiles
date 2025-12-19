@@ -7,8 +7,8 @@ sketchybar --add event front_app_switched --add item current_app center
 sketchybar --set current_app \
   background.corner_radius=5 \
   background.height=20 \
-  background.color="${EF_BG2_40}" \
-  label.color="${EF_ORANGE}" \
+  background.color="${SURFACE_0_40}" \
+  label.color="${PEACH}" \
   icon.padding_left=0 \
   icon.padding_right=0 \
   label.padding_left=8 \

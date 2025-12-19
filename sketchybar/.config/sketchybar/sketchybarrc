@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 # Catppuccin Mocha Theme
-source "${CONFIG_DIR}/themes/everforest.sh"
+source "${CONFIG_DIR}/themes/catppuccin-mocha.sh"
 
 # Bar Properties.
 # See: https://felixkratz.github.io/SketchyBar/config/bar
 bar=(
   position=top
   height=35
-  color="${EF_TRANSPARENT_BG_DIM}"
+  color="${TRANSPARENT_MANTLE}"
   corner_radius=8
   margin=15
   y_offset=8
@@ -20,8 +20,8 @@ default=(
   padding_right=5
   icon.font="BerkeleyMono Nerd Font:Regular:17.0"
   label.font="BerkeleyMono Nerd Font:Regular:14.0"
-  icon.color="${EF_GRAY2}"
-  label.color="${EF_GRAY2}"
+  icon.color="${SUBTEXT_0}"
+  label.color="${SUBTEXT_0}"
   icon.padding_right=4
 )
 sketchybar --default "${default[@]}"

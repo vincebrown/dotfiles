@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-source "${CONFIG_DIR}/themes/everforest.sh"
+source "${CONFIG_DIR}/themes/catppuccin-mocha.sh"
 
 ## If the AeroSpace Workspace is the one in focus, then highlight it.
 WORKSPACE_ID=$1
@@ -10,10 +10,10 @@ fi
 
 if [ "${WORKSPACE_ID}" = "${WORKSPACE_FOCUSED}" ]; then
   sketchybar --set "$NAME" \
-    label.color="${EF_BLUE}" \
-    background.color="${EF_BG0}"
+    label.color="${BLUE}" \
+    background.color="${SURFACE_0}"
 else
   sketchybar --set "$NAME" background.drawing=off \
-    label.color="${EF_GRAY2}" \
-    background.color="${EF_BG2_40}"
+    label.color="${SUBTEXT_0}" \
+    background.color="${SURFACE_0_40}"
 fi
