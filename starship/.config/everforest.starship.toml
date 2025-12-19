@@ -1,0 +1,195 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = """
+[](bg0)\
+$os\
+$username\
+[](bg:bg_green fg:bg0)\
+$directory\
+[](fg:bg_green bg:bg_visual)\
+$git_branch\
+$git_status\
+[](fg:bg_visual bg:bg_blue)\
+$bun\
+$nodejs\
+$golang\
+$ruby\
+$java\
+$rust\
+$python\
+[](fg:bg_blue bg:bg_yellow)\
+$aws\
+[](fg:bg_yellow bg:bg3)\
+$time\
+[ ](fg:bg3)\
+$line_break$character"""
+
+palette = 'everforest'
+
+[palettes.everforest]
+bg_dim = "#232a2e"
+bg0 = "#2d353b"
+bg1 = "#343f44"
+bg2 = "#3d484d"
+bg3 = "#475258"
+bg4 = "#4f585e"
+bg5 = "#56635f"
+bg_visual = "#543a48"
+bg_red = "#514045"
+bg_green = "#425047"
+bg_blue = "#3a515d"
+bg_yellow = "#4d4c43"
+fg = "#d3c6aa"
+red = "#e67e80"
+orange = "#e69875"
+yellow = "#dbbc7f"
+green = "#a7c080"
+aqua = "#83c092"
+blue = "#7fbbb3"
+purple = "#d699b6"
+grey0 = "#7a8478"
+grey1 = "#859289"
+grey2 = "#9da9a0"
+statusline1 = "#a7c080"
+statusline2 = "#d3c6aa"
+statusline3 = "#e67e80"
+
+[os]
+disabled = false
+style = "bg:bg0 fg:statusline2"
+
+[os.symbols]
+Windows = "󰍲"
+Ubuntu = "󰕈"
+SUSE = ""
+Raspbian = "󰐿"
+Mint = "󰣭"
+Macos = "󰊠"
+Manjaro = ""
+Linux = "󰌽"
+Gentoo = "󰣨"
+Fedora = "󰣛"
+Alpine = ""
+Amazon = ""
+Android = ""
+Arch = "󰣇"
+Artix = "󰣇"
+CentOS = ""
+Debian = "󰣚"
+Redhat = "󱄛"
+RedHatEnterprise = "󱄛"
+
+[username]
+show_always = true
+style_user = "bg:bg0 fg:statusline2"
+style_root = "bg:bg0 fg:statusline2"
+format = '[ vince ]($style)'
+
+[directory]
+style = "fg:statusline2 bg:bg_green"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"Documents" = "󰈙 "
+"Downloads" = " "
+"Music" = "󰝚 "
+"Pictures" = " "
+"Developer" = "󰲋 "
+
+[git_branch]
+symbol = ""
+style = "bg:bg_visual"
+format = '[[ $symbol $branch ](fg:statusline2 bg:bg_visual)]($style)'
+
+[git_status]
+style = "bg:bg_visual"
+format = '[[($all_status$ahead_behind )](fg:statusline2 bg:bg_visual)]($style)'
+
+[bun]
+symbol=" "
+style = "bg:teal"
+detect_files = ['bun.lock', 'bun.lockb', 'bunfig.toml']
+format = '[[ $symbol( $version) ](fg:statusline2 bg:bg_blue)]($style)'
+
+[nodejs]
+symbol = "󰎙 "
+style = "bg:teal"
+detect_files = ['package.json', '.node-version', '!bun.lock', '!bun.lockb', '!bunfig.toml']
+format = '[[ $symbol( $version) ](fg:statusline2 bg:bg_blue)]($style)'
+
+[c]
+symbol = " "
+style = "bg:teal"
+format = '[[ $symbol( $version) ](fg:statusline2 bg:bg_blue)]($style)'
+
+[ruby]
+symbol = " "
+style = "bg:teal"
+format = '[[ $symbol( $version) ](fg:statusline2 bg:bg_blue)]($style)'
+
+[rust]
+symbol = ""
+style = "bg:teal"
+format = '[[ $symbol( $version) ](fg:statusline2 bg:bg_blue)]($style)'
+
+[golang]
+symbol = " "
+style = "bg:teal"
+format = '[[ $symbol( $version) ](fg:statusline2 bg:bg_blue)]($style)'
+
+[php]
+symbol = " "
+style = "bg:teal"
+format = '[[ $symbol( $version) ](fg:statusline2 bg:bg_blue)]($style)'
+
+[java]
+symbol = " "
+style = "bg:teal"
+format = '[[ $symbol( $version) ](fg:statusline2 bg:bg_blue)]($style)'
+
+[kotlin]
+symbol = ""
+style = "bg:teal"
+format = '[[ $symbol( $version) ](fg:statusline2 bg:bg_blue)]($style)'
+
+[haskell]
+symbol = ""
+style = "bg:teal"
+format = '[[ $symbol( $version) ](fg:statusline2 bg:bg_blue)]($style)'
+
+[python]
+symbol = ""
+style = "bg:teal"
+format = '[[ $symbol( $version) ](fg:statusline2 bg:bg_blue)]($style)'
+
+
+[aws]
+format = '[ $symbol $profile]($style)'
+style = "bg:bg_yellow"
+symbol = ""
+
+[kubernetes]
+format = '[ $symbol $context]($style)'
+symbol = ""
+style = "bg:bg_yellow"
+disabled = false
+
+[time]
+disabled = false
+time_format = "%R"
+style = "bg:bg3"
+format = '[[  $time ](fg:statusline2 bg:bg3)]($style)'
+
+[line_break]
+disabled = false
+
+[character]
+disabled = false
+success_symbol = '[](bold fg:green)'
+error_symbol = '[](bold fg:red)'
+vimcmd_symbol = '[](bold fg:creen)'
+vimcmd_replace_one_symbol = '[](bold fg:purple)'
+vimcmd_replace_symbol = '[](bold fg:purple)'
+vimcmd_visual_symbol = '[](bold fg:lavender)'

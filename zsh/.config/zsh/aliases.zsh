@@ -15,7 +15,35 @@ alias -g -- --help='--help 2>&1 | bat --language=help --style=plain'
 
 alias lsPkgScripts="bat package.json | jq '.scripts'"
 
-# Github aliases
+# Tmux Aliases
+tm() {
+    if [ $# -eq 0 ]; then
+        tmux list-sessions
+        return
+    fi
+
+    if [ -n "$TMUX" ]; then
+        # In tmux: switch or create+switch
+        tmux switch-client -t "$1" 2>/dev/null || \
+        tmux new-session -d -s "$1" \; switch-client -t "$1"
+    else
+        # Not in tmux: attach or create
+        tmux attach-session -t "$1" 2>/dev/null || \
+        tmux new-session -s "$1"
+    fi
+}
+alias tmk='tmux kill-session -t'          # Kill specific session
+alias tml='tmux list-sessions'            # List all sessions
+alias tmkall='tmux kill-server'           # Kill all sessions
+alias tmr='tmux rename-session'           # Rename current session
+alias tmd='tmux detach'                   # Detach from current session
+
+# Connect/create to session via sesh
+tmc() {
+    sesh connect $(sesh list | fzf)
+}
+
+# Git aliases
 
 # git add
 alias ga='git add'

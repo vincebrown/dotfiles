@@ -10,7 +10,8 @@
 #
 
 # Theme
-theme = Everforest Dark Hard
+# theme = Everforest Dark Hard
+theme = catppuccin-mocha-v2.conf
 background-opacity = 0.85
 background-blur = 5
 title = " "
@@ -34,7 +35,7 @@ font-feature = +ss02 # stylistic set 2 (more alternates)
 font-feature = +zero # slashed zero (0 vs o distinction)
 
 # Mac OS specific
-macos-titlebar-style = tabs
+macos-titlebar-style = hidden
 macos-titlebar-proxy-icon = hidden
 macos-option-as-alt = true
 macos-window-buttons = hidden

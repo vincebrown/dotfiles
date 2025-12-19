@@ -40,21 +40,21 @@ _fzf_compgen_dir() {
 }
 
 # Catppuccin Mocha (Slightly Darkened)
-# export FZF_DEFAULT_OPTS=" \
-# --color=bg+:#2b2c3b,bg:#191924,spinner:#ddb6b3,hl:#dd7c96 \
-# --color=fg:#b8c0e0,header:#dd7c96,info:#b694e0,pointer:#ddb6b3 \
-# --color=marker:#a2ace8,fg+:#b8c0e0,prompt:#b694e0,hl+:#dd7c96 \
-# --color=selected-bg:#3c3e4f \
-# --color=border:#5f6379,label:#b8c0e0"
+export FZF_DEFAULT_OPTS=" \
+--color=bg+:#2b2c3b,bg:#191924,spinner:#ddb6b3,hl:#dd7c96 \
+--color=fg:#b8c0e0,header:#dd7c96,info:#b694e0,pointer:#ddb6b3 \
+--color=marker:#a2ace8,fg+:#b8c0e0,prompt:#b694e0,hl+:#dd7c96 \
+--color=selected-bg:#3c3e4f \
+--color=border:#5f6379,label:#b8c0e0"
 
 #Everforest theme
-export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
-  --color=fg:#d0d0d0,fg+:#D3C6AA,bg:#1E2326,bg+:#1E2326
-  --color=hl:#939F91,hl+:#3A94C5,info:#DBBC7F,marker:#35A77C
-  --color=prompt:#d7005f,spinner:#F85552,pointer:#F85552,header:#7FBBB3
-  --color=border:#2E383C,label:#aeaeae,query:#D3C6AA
-  --border="rounded" --border-label="" --preview-window="border-rounded" --prompt="> "
-  --marker=">" --pointer="◆" --separator="─" --scrollbar="│"'
+# export FZF_DEFAULT_OPTS=$FZF_DEFAULT_OPTS'
+#   --color=fg:#d0d0d0,fg+:#D3C6AA,bg:#1E2326,bg+:#1E2326
+#   --color=hl:#939F91,hl+:#3A94C5,info:#DBBC7F,marker:#35A77C
+#   --color=prompt:#d7005f,spinner:#F85552,pointer:#F85552,header:#7FBBB3
+#   --color=border:#2E383C,label:#aeaeae,query:#D3C6AA
+#   --border="rounded" --border-label="" --preview-window="border-rounded" --prompt="> "
+#   --marker=">" --pointer="◆" --separator="─" --scrollbar="│"'
 
 # Keybind	Description
 # CTRL-GF	Look for git files with fzf
