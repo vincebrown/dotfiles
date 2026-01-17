@@ -38,7 +38,7 @@ macos-titlebar-style = hidden
 macos-titlebar-proxy-icon = hidden
 macos-option-as-alt = true
 macos-window-buttons = hidden
-macos-icon = glass
+macos-icon = xray
 
 mouse-hide-while-typing = true
 window-title-font-family = "Berkeley Mono"

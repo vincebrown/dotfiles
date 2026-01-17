@@ -3,7 +3,7 @@
   "autoupdate": true,
   "permission": {
     "bash": {
-      "gh pr diff *": "allow"
+      "gh *": "allow"
     }
   },
   "instructions": [

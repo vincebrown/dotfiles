@@ -55,4 +55,7 @@ if [[ -n "$WORK_MACHINE" ]]; then
   source "${CONFIG_DIR}/items/slack.sh"
 fi
 
+# Spotify - only show when open
+source "${CONFIG_DIR}/items/spotify.sh"
+
 sketchybar --update

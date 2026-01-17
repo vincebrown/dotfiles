@@ -50,3 +50,4 @@ if [[ -f "$syntax_highlighting_plugin" ]]; then
 fi
 
 export PATH="$HOME/go/bin:$PATH"
+export BEADS_NO_DAEMON=1
